@@ -10,7 +10,7 @@
 - name: Download maven dependencies
   ansible.builtin.shell: mvn clean package ; mv target/{{component}}-1.0.jar {{component}}.jar
   args:
-    chdir: /appmvn clean package
+    chdir: /app
 
 - name: schema setup
   ansible.builtin.import_tasks: mysql-schema.yml
