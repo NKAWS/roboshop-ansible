@@ -12,7 +12,7 @@
   ansible.builtin.import_tasks: app-preq.yml
 
 - name: Download Nodejs dependencies
-  ansible.builtin.shell: rpm install
+  ansible.builtin.shell: npm install
   args:
     chdir: /app
 
